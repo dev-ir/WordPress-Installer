@@ -55,7 +55,6 @@ menu(){
     echo -e "|${GREEN}Server Country    |${NC} $SERVER_COUNTRY"
     echo -e "|${GREEN}Server IP         |${NC} $SERVER_IP"
     echo -e "|${GREEN}Server ISP        |${NC} $SERVER_ISP"
-    echo -e "|${GREEN}WordPress Status  |${NC} Not Installed"
     echo "+------------------------------------------------------------------------------------------------+"
     echo -e "|${YELLOW}Please choose an option:${NC}"
     echo "+------------------------------------------------------------------------------------------------+"
