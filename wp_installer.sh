@@ -109,3 +109,5 @@ install_wordpress(){
     echo -e "Now, you need to open your IP and enter the required information to complete the setup"
     
 }
+
+install_wordpress
