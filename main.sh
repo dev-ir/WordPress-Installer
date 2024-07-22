@@ -23,6 +23,8 @@ install_jq() {
 }
 
 necessary_package(){
+    sudo apt upgrade -y 
+    sudo apt update -y
     install_jq
 }
 
@@ -90,6 +92,7 @@ loader(){
 install_wordpress(){
     wget https://raw.githubusercontent.com/dev-ir/WordPress-Installer/master/wp_installer.sh
     bash wp_installer.sh
+
 }
 
 unistall_wordpress() {
