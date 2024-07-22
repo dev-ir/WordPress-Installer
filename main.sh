@@ -88,6 +88,11 @@ loader(){
     
 }
 
+install_wordpress(){
+    wget https://raw.githubusercontent.com/dev-ir/WordPress-Installer/master/wp_installer.sh
+    bash wp_installer
+}
+
 unistall_wordpress() {
     echo -e "${RED}Removing WordPress...${NC}"
     
@@ -99,15 +104,13 @@ unistall_wordpress() {
 DROP DATABASE wordpress;
 DROP USER 'wordpress'@'localhost';
 EOF
-    
-    # Remove any leftover configuration files and directories
+    sudo rm wp_installer
     sudo rm -rf /etc/apache2/sites-available/wordpress.conf
     sudo a2disconf wordpress.conf
     
-    # Start the Apache service
     sudo systemctl start apache2
     
-    echo "WordPress has been successfully uninstalled."
+    echo "WordPress has been uninstalled."
 }
 
 necessary_package
