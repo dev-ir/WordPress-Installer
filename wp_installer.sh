@@ -1,5 +1,6 @@
 ## wordpress installation function
 ## https://ubuntu.com/tutorials/install-and-configure-wordpress#6-configure-wordpress-to-connect-to-the-database
+## special tnk astro
 
 install_wordpress(){
     
